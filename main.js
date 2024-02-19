@@ -1,12 +1,10 @@
 
-
-const container = document.querySelector('.container');
+const container = document.querySelector('.product-container');
 
 // fetch product data
 fetch("https://fakestoreapi.com/products")
     .then((res) => res.json())
     .then((data) => displayProduct(data));
-
 
 
 function displayProduct(products) {
